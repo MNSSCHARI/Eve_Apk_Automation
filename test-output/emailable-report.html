@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">Default Suite</th></tr>
+<tr><td><a href="#t0">PayCioAutomation</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">157,886</td><td></td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">PayCioAutomation &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">Tests.ReceiveFunds</td><td><a href="#m0">Receive_Funds_Scenario</a></td><td rowspan="1">1743586407819</td><td rowspan="1">150921</td></tr></tbody>
+</table>
+<h2>PayCioAutomation</h2><h3 id="m0">Tests.ReceiveFunds#Receive_Funds_Scenario</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages"><b>✅ Clicked on the 'Receive Funds' TextView.</b><br/>Clicked on Bitcoin Mainnet<br/>Clicked on Ethereum TextView<br/>📸 Screenshot after clicking Ethereum: C:\Users\hp\Desktop\AppiumAutomation\PayCioAutomation\screenshots\Ethereum_Screenshot_20250402_150337.png<br/>Clicked on Ethereum TextView<br/>Clicked on Lite Coin TextView<br/>📸 Screenshot after clicking Litecoin: C:\Users\hp\Desktop\AppiumAutomation\PayCioAutomation\screenshots\LiteCoin_Screenshot_20250402_150346.png<br/>Clicked on Lite Coin TextView<br/>Clicked on BitCoin Cash TextView<br/>📸 Screenshot after clicking BitCoin Cash: C:\Users\hp\Desktop\AppiumAutomation\PayCioAutomation\screenshots\BitCoinCash_Screenshot_20250402_150354.png<br/>Clicked on BitCoin Cash TextView<br/>Clicked on USDC TextView<br/>📸 Screenshot after clicking USDC: C:\Users\hp\Desktop\AppiumAutomation\PayCioAutomation\screenshots\USDC_Screenshot_20250402_150402.png<br/>Clicked on USDC TextView<br/>✅ Clicked on Binance Coin TextView<br/>📸 Screenshot after clicking USDC: C:\Users\hp\Desktop\AppiumAutomation\PayCioAutomation\screenshots\USDC_Screenshot_20250402_150409.png<br/>✅ Clicked on Binance Coin TextView<br/>✅ Clicked on Tron TextView<br/>📸 Screenshot after clicking USDC: C:\Users\hp\Desktop\AppiumAutomation\PayCioAutomation\screenshots\USDC_Screenshot_20250402_150415.png<br/>✅ Clicked on Tron TextView<br/>clicked on True USD <br/>📸 Screenshot after clicking USDC: C:\Users\hp\Desktop\AppiumAutomation\PayCioAutomation\screenshots\USDC_Screenshot_20250402_150426.png<br/>clicked on True USD <br/>✅ Clicked on Dash TextView<br/>📸 Screenshot after clicking USDC: C:\Users\hp\Desktop\AppiumAutomation\PayCioAutomation\screenshots\USDC_Screenshot_20250402_150443.png<br/>✅ Clicked on Dash TextView<br/>✅ Clicked on Doge Coin TextView<br/>✅ Clicked on Doge TextView<br/>✅ Clicked on Polygon TextView<br/>✅ Clicked on Polygon TextView<br/>✅ Clicked on Solana Mainnet TextView<br/>✅ Clicked on Solana Mainnet TextView<br/>✅ Clicked on Avalanche C-Chain TextView<br/>✅ Clicked on Avalanche TextView</div></td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.xpath: //android.widget.TextView[@text=&quot;Tether USD&quot;]&apos; (tried for 20 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at pages.OperationsButton.scrollAndClickOnBinanceTetherSmartChain(OperationsButton.java:1472)
+	at Tests.ReceiveFunds.Receive_Funds_Scenario(ReceiveFunds.java:130)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+Caused by: org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.29.0&apos;, revision: &apos;5fc1ec94cb&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.2&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [63a71d44-c017-435f-b947-1dec55320ce3, findElement {value=//android.widget.TextView[@text=&quot;Tether USD&quot;], using=xpath}]
+Capabilities {appium:app: C://Users//hp//Downloads//P..., appium:appActivity: com.paycio.MainActivity, appium:appPackage: com.paycio, appium:automationName: UIAutomator2, appium:databaseEnabled: false, appium:desired: {app: C://Users//hp//Downloads//P..., automationName: UIAutomator2, deviceName: Vivo I2208 API 34, fullReset: false, noReset: true, platformName: ANDROID}, appium:deviceApiLevel: 34, appium:deviceManufacturer: vivo, appium:deviceModel: I2208, appium:deviceName: 10BD6C0Z8R000Y5, appium:deviceScreenDensity: 440, appium:deviceScreenSize: 1080x2408, appium:deviceUDID: 10BD6C0Z8R000Y5, appium:fullReset: false, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:noReset: true, appium:pixelRatio: 2.75, appium:platformVersion: 14, appium:statBarHeight: 88, appium:takesScreenshot: true, appium:viewportRect: {height: 2320, left: 0, top: 88, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 63a71d44-c017-435f-b947-1dec55320ce3
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:237)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy16.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	... 27 more
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>
